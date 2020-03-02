@@ -1,0 +1,26 @@
+//Q7
+float quantity, price_per_item,
+        total_expenses = 0;
+std::cin >> quantity >> price_per_item;
+total_expenses = price_per_item * quantity;
+if (total_expenses >= 500)
+    total_expenses *= 0.9;
+std::cout << "Total expesnes : " << total_expenses << '\n';
+    
+    
+//Q8
+int y;
+std::cin >> y;
+if (!(y % 4)) {
+    if (!(y % 100)) {
+        if (y % 400)
+            std::cout << "Not leap\n";
+        else
+            std::cout << "Leap\n";
+    }
+    else
+        std::cout << "Leap\n";
+}
+else {
+    std::cout << "Not leap\n";
+}
