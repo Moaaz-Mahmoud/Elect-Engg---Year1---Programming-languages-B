@@ -1,0 +1,27 @@
+//Prob. 7
+    char c;
+    std::cout << "Enter the character\n>>> ";
+    std::cin >> c;
+    std::cout << char(c + 1) << "\n\n\n";
+
+
+
+
+//Prob. 8
+    int days,
+        _y = 0, _m = 0, _d = 0;
+    std::cout << "Enter the number of days\n>>> ";
+    std::cin >> days;
+    if (days < 0) {
+        std::cerr << "*** Days can't be negative ***\n";
+        goto exit;
+    }
+    _y = days / 365;
+    _y = days / 365;
+    for (; days > 365; days -= 365);
+    for (; days > 30; days -= 30)
+        _m++;
+    _d = days;
+    std::cout << _y << " years " << _m << " months " << _d << " days\n";
+
+exit: return 0;
